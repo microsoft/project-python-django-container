@@ -2,7 +2,6 @@ FROM ubuntu:16.04
 MAINTAINER Azure App Service Container Images <appsvc-images@microsoft.com>
 
 RUN apt-get update && apt-get install -y python-pip python-dev && apt-get clean
-RUN pip install django
 
 RUN mkdir /code
 WORKDIR /code
